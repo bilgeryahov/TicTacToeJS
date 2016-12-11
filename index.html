@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tic tac toe game</title>
+	<script src="JS/Vendor/mootools-core-1.5.1-full-nocompat.js"></script>
+	<script src="JS/Vendor/mootools-more-1.5.2.js"></script>
+	<script src="JS/Logic.js"></script>
+	<style>
+		table, th, td {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<table style="width: 25%; margin:50px auto 0; text-align: center; font-size: 30px;">
+		<tr >
+			<td style="width: 100px;height: 100px" id="0"></td>
+			<td style="width: 100px;height: 100px" id="1"></td>
+			<td style="width: 100px;height: 100px" id="2"></td>
+		</tr>
+		<tr>
+			<td style="width: 100px;height: 100px" id="3"></td>
+			<td style="width: 100px;height: 100px" id="4"></td>
+			<td style="width: 100px;height: 100px" id="5"></td>
+		</tr>
+		<tr>
+			<td style="width: 100px;height: 100px" id="6"></td>
+			<td style="width: 100px;height: 100px" id="7"></td>
+			<td style="width: 100px;height: 100px" id="8"></td>
+		</tr>
+	</table>
+	<br/><br/><br/>
+	<p id="TiesString" style="text-align: center">Ties: </p>
+	<p id="HumansString" style="text-align: center">Human: </p>
+	<p id="InfoString" style="text-align: center">Info: </p>
+	<p id = "ComputersString" style="text-align: center">Computer: </p>
+	<span id="NewGame" style="text-decoration: underline; color: blueviolet;">NEW GAME</span>
+</body>
+</html>
