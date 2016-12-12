@@ -61,6 +61,7 @@ var Game = {
 			self.startNewGame();
 		});
 
+		// Decide who will start.
 		self.decideStarter();
 	},
 
@@ -102,37 +103,7 @@ var Game = {
 			self.infoString.innerHTML = "Computer, it's your turn!";
 			let move = self.getComputerMove();
 			self.setMove(self.computerPlayer, move);
-			winner = self.checkForWinner();
-
-			// Still no one.
-			if(winner === 0 ){
-
-				self.infoString.innerHTML = "Human, it's your turn!";
-			}
-			else if(winner === 1){
-
-				// It's a tie!
-				self.infoString.innerHTML = "The result is tie!";
-				self.tiesCounter++;
-				self.tiesString.innerHTML =  'Ties: ' + self.tiesCounter.toString();
-				self.gameOver = true;
-			}
-			else if(winner === 2){
-
-				// Human, go!
-				self.infoString.innerHTML = "Human wins!";
-				self.humansCounter++;
-				self.humansString.innerHTML = 'Human: ' +  self.humansCounter.toString();
-				self.gameOver = true;
-			}
-			else if(winner === 3){
-
-				// Sad panda face!
-				self.infoString.innerHTML = "Computer wins!";
-				self.computersCounter++;
-				self.computersString.innerHTML = 'Computer: ' + self.computersCounter.toString();
-				self.gameOver = true;
-			}
+			self.infoString.innerHTML = "Human, it's your turn!";
 		}
 		else{
 
