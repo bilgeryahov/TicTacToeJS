@@ -37,7 +37,7 @@ var Game = {
 
 	initialize: function(){
 
-		console.log('init');
+		console.log('init, this is a cool project!');
 
 		let self = this;
 
