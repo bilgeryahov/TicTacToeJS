@@ -37,6 +37,8 @@ var Game = {
 
 	initialize: function(){
 
+		console.log('init');
+
 		let self = this;
 
 		for(let counter = 0; counter < self.board.length; counter++){
